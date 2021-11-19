@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-title size="small">DuocUC - RegistrAPP</ion-title>
+      <ion-img src="assets/img/logo-duoc.png"></ion-img>  
+    </ion-title>
+  </ion-toolbar> 
+</ion-header>
+  <ion-buttons slot="start" (click)="goBack()">Cerrar Sesión</ion-buttons>  
+  
+
+<ion-content [fullscreen]="true">     
+  <div class="card">
+  <div class="profile-picture">
+    <div class="profile-picture-outer-radius">
+    <ion-img src="assets/img/usuario-perfil.png"></ion-img>
+  </div>
+  </div>
+  <div class="infobox">
+    <p class="infobox-username" *ngIf="name">{{name}}</p>
+  </div>
+  <div class="bienvenido">
+    <ion-title size="small">Bienvenido: FABIAN ANDRES LECAROS QUEZADA </ion-title>
+  </div>
+  <div class="ramos">
+    <ion-button color="warning" expand="block">Ver Ramos</ion-button>
+  </div>
+  <div class="horario">
+    <ion-button color="warning" expand="block">Horario</ion-button>
+  </div>
+  <ion-row>
+  </ion-row>
+  <div class="qr">
+    <ion-button color="warning" expand="block" href="/codigo">Generar Código QR</ion-button>  
+  </div>
+  
+</div>
+    
+</ion-content>

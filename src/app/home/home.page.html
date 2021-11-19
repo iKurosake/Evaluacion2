@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-title size="small">DuocUC - RegistrAPP</ion-title>
+      <ion-img src="assets/img/logo-duoc.png"></ion-img> 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  <form (ngSubmit)="login()" #registerForm="ngForm">
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-item>
+            <ion-input type="text" placeholder="Usuario" name="user"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" placeholder="Contraseña" name="password"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>     
+    </ion-row>
+    <ion-row>   
+      <ion-col>
+        <ion-button type="submit" color="warning" expand="block">Iniciar Sesión</ion-button>     
+      </ion-col>   
+    </ion-row>
+  </form>
+</ion-content>
+
+<!--<ion-content>
+  <ion-card>
+    <ion-card-header>
+       <ion-card-title>Login</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form>
+        <ion-item>
+          <ion-label position-"floating">Nombre</ion-label>
+          <ion-input formControlName-"nombre"></ion-input>
+        </ion-item>
+        <ion-iten>
+          <ion-label position-"floating">Contraseña</ion-label>
+          <ion-input formControlName-"password" type-"password"></ion-input>
+        </ion-item>
+      </form>
+      <br>
+      <ion-button color="warning" (click)-"ingresar()">Ingresar</ion-button>
+    </lon-card-content>
+  </1on-card>
+</ion-content> -->
+
+<ion-footer>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="end">
+      <ion-button [RouterLink]="['/registro']">Registrarse</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
